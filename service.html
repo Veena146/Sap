@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Versuance</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+  <div class="container header-container">
+    <div class="logo-title">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <span class="company-name">Versuance</span>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="service.html">Services</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+
+  <main>
+     <section class="mb-5 text-center animate__animated animate__fadeInUp">
+      <h3>Our Core SAP Services</h3>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-4">
+          <div class="p-3 border rounded shadow-sm h-100 animate__animated animate__fadeInLeft">
+            <h5><a href="sap-installation.html">SAP Installation</a></h5>
+            <p>End-to-end setup of SAP environments including NetWeaver, HANA, and Solution Manager.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="p-3 border rounded shadow-sm h-100 animate__animated animate__fadeInUp">
+            <h5><a href="sap-upgrade.html">SAP Upgrade</a></h5>
+            <p>Version upgrades with minimal downtime and performance optimization.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="p-3 border rounded shadow-sm h-100 animate__animated animate__fadeInRight">
+            <h5><a href="sap-migration.html">SAP Migration</a></h5>
+            <p>Platform and database migrations for cloud, HANA, and hybrid infrastructures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+ <footer>
+    &copy; 2025 Versuance. All rights reserved.
+  </footer>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
+  }
+</script>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    if (nav.style.display === 'flex') {
+      nav.style.display = 'none';
+    } else {
+      nav.style.display = 'flex';
+    }
+  }
+</script>
+
+</body>
+</html>
