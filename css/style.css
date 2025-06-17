@@ -1075,58 +1075,56 @@ li {
     color: white;
 }
 
+/* Header */
+.site-header {
+    background-color: #002b45;
+    padding: 10px 20px;
+    color: white;
+}
+
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;  /* space between Versuance & menu */
     align-items: center;
-    justify-content: space-between;
-     flex-wrap: nowrap;
-}
-
-.logo-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo {
-    height: 40px; 
 }
 
 .company-name {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-     white-space: nowrap;
+    color: white;
+    white-space: nowrap;
 }
 
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 30px; /* More space between menu items */
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .menu-toggle {
     display: none;
     font-size: 28px;
-    cursor: pointer;
     color: white;
+    cursor: pointer;
 }
 
-/* For Mobile Screens */
+/* Mobile View */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: #002b45;
         flex-direction: column;
+        background-color: #002b45;
+        position: absolute;
+        right: 20px;
+        top: 60px;
         width: 200px;
         padding: 10px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.3);
