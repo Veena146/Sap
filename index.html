@@ -14,25 +14,32 @@
 <body>
 
   <!-- Header -->
-<header class="site-header">
-  <div class="container header-container">
-    <div class="logo-title">
-       <div class="logo-title">
-      <span class="company-name">Versuance</span>
-    </div>
-     
-    <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="sap-installation.html">Installation</a>
-      <a href="sap-upgrade.html">Upgrade</a>
-      <a href="sap-migration.html">Migration</a>
-      <a href="company.html">Company</a>
-    </nav>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+<header class="navbar">
+  <div class="navbar-left">
+    <span class="logo">Versuance</span>
   </div>
-<button class="contact-btn" onclick="location.href='contact.html'">Contact Us</button>
-  
+   <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  <div class="navbar-center" id="navLinks">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sap-installation.html">Installation</a></li>
+        <li><a href="sap-upgrade.html">Upgrade</a></li>
+        <li><a href="sap-migration.html">Migration</a></li>
+        <li><a href="company.html">Company</a></li>
+      </ul>
+    </nav>
+  </div>
+   <div class="navbar-right">
+    <a href="contact.html" class="contact-btn">Contact Us</a>
+  </div>
+  <!-- <button class="menu-toggle" onclick="toggleMenu()">☰</button> -->
 </header>
+
  <!-- Hero Section -->
     <section class="sap-basis-section text-center">
   <div class="container">
@@ -150,7 +157,7 @@
   <footer>
     &copy; 2025 Versuance. All rights reserved.
   </footer>
-<script>
+<!-- <script>
   function toggleMenu() {
     const nav = document.getElementById('navLinks');
     nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
@@ -165,7 +172,13 @@
       nav.style.display = 'flex';
     }
   }
-</script>
+</script> -->
+ <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
 
 </body>
 </html>

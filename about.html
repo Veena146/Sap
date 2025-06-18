@@ -8,22 +8,30 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container header-container">
-    <div class="logo-title">
-       <div class="logo-title">
-      <span class="company-name">Versuance</span>
+ <header class="navbar">
+  <div class="navbar-left">
+    <span class="logo">Versuance</span>
+  </div>
+   <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-     
-    <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="service.html">Service</a>
-      <a href="about.html">About us</a>
-      <a href="contact.html">Contact Us</a>
+  <div class="navbar-center" id="navLinks">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </nav>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+  <div class="navbar-right">
+    <!-- <button class="menu-toggle" onclick="toggleMenu()">☰</button> -->
   </div>
 </header>
+
 
 <main>
   <!-- About Us -->
@@ -83,7 +91,7 @@
 </footer>
 
 <!-- JS for mobile menu -->
-<script>
+<!-- <script>
   function toggleMenu() {
     const nav = document.getElementById('navLinks');
     nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
@@ -98,7 +106,13 @@
       nav.style.display = 'flex';
     }
   }
-</script>
+</script> -->
+ <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
 
 </body>
 </html>

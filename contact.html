@@ -8,53 +8,68 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container header-container">
-    <div class="logo-title">
-       <div class="logo-title">
-      <span class="company-name">Versuance</span>
+<header class="navbar">
+  <div class="navbar-left">
+    <span class="logo">Versuance</span>
+  </div>
+   <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-     
-    <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="service.html">Service</a>
-      <a href="about.html">About us</a>
-      <a href="contact.html">Contact Us</a>
+  <div class="navbar-center" id="navLinks">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </nav>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+  <div class="navbar-right">
+    <!-- <button class="menu-toggle" onclick="toggleMenu()">☰</button> -->
   </div>
 </header>
 
+
 <main>
-  <section class="contact-section container">
-    <div class="contact-info">
-      <h2>Please tell us your SAP requirements</h2>
-      <p><strong>Write to:</strong> <a href="mailto:hr@versuance.com">hr@versuance.com</a></p>
-      <p><strong>Phone:</strong> +91 (80) 958-84891</p>
-      <p><strong>Address:</strong> Bengaluru, Karnataka 560010</p>
+ <section class="contact-section container">
+  <div class="contact-info">
+    <h2>Please tell us your SAP requirements</h2>
+    <p><strong>Write to:</strong> <a href="mailto:hr@versuance.com">hr@versuance.com</a></p>
+    <p><strong>Phone:</strong> +91 (80) 958-84891</p>
+    <p><strong>Address:</strong> Bengaluru, Karnataka 560010</p>
+  </div>
+
+  <div class="contact-form">
+    <form id="contactForm" onsubmit="return handleSubmit(event)">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Only letters and spaces allowed" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="thankYouMessage" style="display: none; margin-top: 20px; color: green; font-weight: bold;">
+      Thank you! Your message has been submitted.
     </div>
-    <div class="contact-form">
-      <form action="#" method="post">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter your Name" required>
+  </div>
+</section>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your Business Email" required>
 
-        <label for="message">Message</label>
-        <textarea id="message" rows="4" placeholder="Please let us know your SAP requirements"></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
 </main>
 
 <footer>
   &copy; 2025 Versuance. All rights reserved.
 </footer>
 
-<script>
+<!-- <script>
   function toggleMenu() {
     const nav = document.getElementById('navLinks');
     nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
@@ -69,7 +84,9 @@
       nav.style.display = 'flex';
     }
   }
-</script>
+</script> -->
+  <!-- ✅ Correct placement: after everything -->
+<script src="script.js"></script>
 
 </body>
 </html>
