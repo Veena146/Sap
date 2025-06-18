@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Versuance</title>
+  <title>About Us - Versuance</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<header class="navbar">
+<header class="navbar" >
   <div class="navbar-left">
     <span class="logo">Versuance</span>
   </div>
@@ -28,11 +27,10 @@
     </nav>
   </div>
   <div class="navbar-right">
-    <!-- <button class="menu-toggle" onclick="toggleMenu()">☰</button> -->
+     <a href="contact.html" class="contact-btn">Contact Us</a>
   </div>
+  <!-- <button class="menu-toggle" onclick="toggleMenu()">☰</button> -->
 </header>
-
-
 <main>
  <section class="contact-section container">
   <div class="contact-info">
@@ -65,17 +63,11 @@
 
 </main>
 
-<footer>
-  &copy; 2025 Versuance. All rights reserved.
-</footer>
+
+<script src="script.js"></script>
+
 
 <!-- <script>
-  function toggleMenu() {
-    const nav = document.getElementById('navLinks');
-    nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
-  }
-</script>
-<script>
   function toggleMenu() {
     const nav = document.getElementById('navLinks');
     if (nav.style.display === 'flex') {
@@ -85,8 +77,15 @@
     }
   }
 </script> -->
-  <!-- ✅ Correct placement: after everything -->
-<script src="script.js"></script>
+ <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+<footer>
+  &copy; 2025 Versuance. All rights reserved.
+</footer>
 
 </body>
 </html>
