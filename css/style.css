@@ -4,19 +4,26 @@
 }
 
 html, body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #acc2d8;
-  color: #333;
-  overflow-x: hidden;
-}
+     height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #acc2d8;
+    color: #333;
+    overflow-x: hidden;  /* to prevent horizontal scroll */
 
+ 
+}
+main {
+    flex: 1;
+}
 img, iframe, video {
   max-width: 100%;
   height: auto;
   display: block;
+  
 }
 
 /* Header */
@@ -196,15 +203,7 @@ img, iframe, video {
   max-width: 500px;
 }
 
-/* Footer fix to stick at bottom */
-footer {
-  background-color: #002b45;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  width: 100%;
-  margin-top: auto;
-}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -242,9 +241,9 @@ footer {
   }
 }
 
-section {
+/* section {
   overflow-x: hidden;
-}
+} */
 
 .container {
   max-width: 1200px;
@@ -919,10 +918,11 @@ li {
   cursor: pointer;
 }/* Footer fix to stick at bottom */
 footer {
-  background-color: #002b45;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  width: 100%;
-  margin-top: auto;
+    background-color: #002b45;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto; /* THIS will now work properly */
 }
