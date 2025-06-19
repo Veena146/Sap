@@ -381,6 +381,7 @@ img, iframe, video {
     background-color: #174b6b;
     color: white;
     padding: 50px 20px;
+    text-align: center;
 }
 
 .about-content {
