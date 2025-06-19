@@ -22,7 +22,7 @@ main {
 img, iframe, video {
   max-width: 100%;
   height: auto;
-  display: block;
+  /* display: block; */
   
 }
 
