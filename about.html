@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Versuance</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ <header class="navbar">
+  <div class="navbar-left">
+    <span class="logo">Versuance</span>
+  </div>
+   <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  <div class="navbar-center" id="navLinks">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="career.html">Careers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+
+      </ul>
+    </nav>
+  </div>
+  <div class="navbar-right">
+    <!-- <button class="menu-toggle" onclick="toggleMenu()">☰</button> -->
+  </div>
+</header>
+
+
+<main>
+  <!-- About Us -->
+  <section class="about-section container">
+    <h2>About Us</h2>
+    <p>Versuance is dedicated to delivering top-quality SAP services, ensuring seamless enterprise operations for our clients worldwide.</p>
+    <p>We specialize in SAP Installation, Upgrade, Migration, and Managed Services across industries, leveraging the best practices and certified SAP consultants.</p>
+    <p>Versuance was founded with a passion to simplify SAP implementation for growing businesses. Our mission is to provide affordable, flexible, and scalable SAP solutions to enterprises of all sizes — helping them unlock operational efficiency and digital transformation.</p>
+  </section>
+
+  <!-- Vision and Mission -->
+  <section class="vision-mission-section">
+    <div class="vm-box">
+      <h3>Our Vision</h3>
+      <p>To empower organizations with SAP solutions that drive innovation and long-term growth.</p>
+    </div>
+    <div class="vm-box">
+      <h3>Our Mission</h3>
+      <p>Delivering tailored, cost-effective SAP services with a focus on client success, transparency, and trust.</p>
+    </div>
+  </section>
+
+  <!-- 3 Boxes: What We Offer | Why Us | Core Values -->
+  <section class="info-boxes-section">
+    <div class="info-box">
+      <h3>What We Offer</h3>
+      <ul>
+        <li>✔ Affordable SAP Implementation Packages</li>
+        <li>✔ Flexible Engagement Models</li>
+        <li>✔ Quick SAP Upgrades for Growing Businesses</li>
+        <li>✔ Reliable SAP Maintenance & Support</li>
+      </ul>
+    </div>
+    <div class="info-box">
+      <h3>Why Startups and SMEs Trust Us?</h3>
+      <ul>
+        <li>✔ Personalized Attention to Every Client</li>
+        <li>✔ Flexible, Cost-effective SAP Solutions</li>
+        <li>✔ Transparent Processes with No Hidden Costs</li>
+        <li>✔ Young, Energetic & Expert SAP Team</li>
+      </ul>
+    </div>
+    <div class="info-box">
+      <h3>Our Core Values</h3>
+      <ul>
+        <li>✔ Integrity</li>
+        <li>✔ Innovation</li>
+        <li>✔ Commitment to Quality</li>
+        <li>✔ Customer-Centric Approach</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Versuance. All rights reserved.
+</footer>
+
+<!-- JS for mobile menu -->
+<!-- <script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
+  }
+</script>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    if (nav.style.display === 'flex') {
+      nav.style.display = 'none';
+    } else {
+      nav.style.display = 'flex';
+    }
+  }
+</script> -->
+ <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

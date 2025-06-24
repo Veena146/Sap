@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Versuance</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar" >
+  <div class="navbar-left">
+    <span class="logo">Versuance</span>
+  </div>
+   <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  <div class="navbar-center" id="navLinks">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="career.html">Careers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+
+      </ul>
+    </nav>
+  </div>
+  <div class="navbar-right">
+     <a href="contact.html" class="contact-btn">Contact Us</a>
+  </div>
+  <!-- <button class="menu-toggle" onclick="toggleMenu()">☰</button> -->
+</header>
+<main>
+ <section class="contact-section container">
+  <div class="contact-info">
+    <h2>Please tell us your SAP requirements</h2>
+    <p><strong>Write to:</strong> <a href="mailto:hr@versuance.com">hr@versuance.com</a></p>
+    <p><strong>Phone:</strong> +91 (80) 958-84891</p>
+    <p><strong>Address:</strong> Bengaluru, Karnataka 560010</p>
+  </div>
+
+  <div class="contact-form">
+    <form id="contactForm" onsubmit="return handleSubmit(event)">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Only letters and spaces allowed" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="thankYouMessage" style="display: none; margin-top: 20px; color: green; font-weight: bold;">
+      Thank you! Your message has been submitted.
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+
+<!-- <script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    if (nav.style.display === 'flex') {
+      nav.style.display = 'none';
+    } else {
+      nav.style.display = 'flex';
+    }
+  }
+</script> -->
+ <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+<footer>
+  &copy; 2025 Versuance. All rights reserved.
+</footer>
+
+</body>
+</html>

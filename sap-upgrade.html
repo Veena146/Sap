@@ -1,0 +1,85 @@
+<!-- sap-upgrade.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAP Upgrade | Versuance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="navbar">
+  <div class="navbar-left" >
+    <span class="logo">Versuance</span>
+  </div>
+   <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  <div class="navbar-center" id="navLinks">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sap-installation.html">Installation</a></li>
+        <li><a href="sap-upgrade.html">Upgrade</a></li>
+        <li><a href="sap-migration.html">Migration</a></li>
+        <li><a href="company.html">Company</a></li>
+      </ul>
+    </nav>
+  </div>
+    <div class="navbar-right">
+    <a href="contact.html" class="contact-btn">Contact Us</a>
+  </div>
+  <!-- <button class="menu-toggle" onclick="toggleMenu()">☰</button> -->
+</header>
+
+<section class="service-detail container">
+  <h2>SAP Upgrade Services</h2>
+  <img src="images/sap-upgrade-migration1.png" alt="SAP Upgrade" class="service-image">
+  <p>Our SAP Upgrade services help businesses move to the latest SAP versions with speed, safety, and compliance...</p>
+</section>
+
+  <section class="container my-5">
+    <h2>SAP Upgrade Services</h2>
+    <p>Our SAP Upgrade services help businesses move to the latest SAP versions with speed, safety, and compliance. We perform technical upgrades, add-on adjustments, and database compatibility checks.</p>
+    <h4>Our Capabilities</h4>
+    <ul>
+      <li>ECC to S/4HANA migration support</li>
+      <li>SP Stack and Kernel upgrades</li>
+      <li>Unicode conversions</li>
+      <li>Pre-upgrade system analysis and planning</li>
+    </ul>
+  </section>
+<!-- Footer -->
+  <footer>
+    &copy; 2025 Versuance. All rights reserved.
+  </footer>
+<!-- 
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
+  }
+</script>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    if (nav.style.display === 'flex') {
+      nav.style.display = 'none';
+    } else {
+      nav.style.display = 'flex';
+    }
+  }
+</script> -->
+ <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+
+
+</body>
+</html>

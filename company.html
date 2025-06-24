@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Versuance</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar" >
+  <div class="navbar-left">
+    <span class="logo">Versuance</span>
+  </div>
+   <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  <div class="navbar-center" id="navLinks">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="career.html">Careers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+
+      </ul>
+    </nav>
+  </div>
+  <div class="navbar-right">
+     <a href="contact.html" class="contact-btn">Contact Us</a>
+  </div>
+  <!-- <button class="menu-toggle" onclick="toggleMenu()">☰</button> -->
+</header>
+
+
+<main>
+  <section class="about-hero text-center">
+    <h2>About Us</h2>
+    <p>Empowering businesses with reliable, scalable, and future-ready SAP solutions.</p>
+  </section>
+
+  <section class="about-content container">
+    <div class="about-text">
+      <h3>Who We Are</h3>
+      <p>At <strong>Versuance</strong>, we are committed to delivering end-to-end SAP services tailored to meet the evolving needs of modern enterprises. Our team of certified experts ensures seamless SAP implementation, upgrades, and migrations to help you achieve operational excellence.</p>
+    </div>
+   
+  </section>
+
+  <!-- <section class="vision-mission container">
+    <div class="vm-box">
+      <h3>Our Vision</h3>
+      <p>To be the most trusted SAP service provider, transforming businesses globally through innovation and excellence.</p>
+    </div>
+    <div class="vm-box">
+      <h3>Our Mission</h3>
+      <p>Delivering value-driven SAP solutions that empower our clients to achieve operational efficiency, agility, and digital growth.</p>
+    </div>
+  </section> -->
+   <!-- Vision and Mission -->
+  <section class="vision-mission-section">
+    <div class="vm-box">
+      <h3>Our Vision</h3>
+      <p>To be the most trusted SAP service provider, transforming businesses globally through innovation and excellence.</p>
+    </div>
+    <div class="vm-box">
+      <h3>Our Mission</h3>
+      <p>Delivering value-driven SAP solutions that empower our clients to achieve operational efficiency, agility, and digital growth.</p>
+    </div>
+  </section>
+
+  <section class="values container">
+    <h3>Our Core Values</h3>
+    <ul>
+      <li>✔ Customer Centricity</li>
+      <li>✔ Innovation</li>
+      <li>✔ Integrity</li>
+      <li>✔ Excellence in Delivery</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Versuance. All rights reserved.
+</footer>
+<!-- <script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    if (nav.style.display === 'flex') {
+      nav.style.display = 'none';
+    } else {
+      nav.style.display = 'flex';
+    }
+  }
+</script> -->
+ <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+
+
+</body>
+</html>

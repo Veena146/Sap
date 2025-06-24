@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAP Installation | Versuance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar-left">
+    <span class="logo">Versuance</span>
+  </div>
+   <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  <div class="navbar-center" id="navLinks">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sap-installation.html">Installation</a></li>
+        <li><a href="sap-upgrade.html">Upgrade</a></li>
+        <li><a href="sap-migration.html">Migration</a></li>
+        <li><a href="company.html">Company</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="navbar-right">
+    <a href="contact.html" class="contact-btn">Contact Us</a>
+  </div>
+  <!-- <button class="menu-toggle" onclick="toggleMenu()">☰</button> -->
+</header>
+
+
+ <section class="service-detail container">
+  <h2>SAP Installation Services</h2>
+  <img src="images/sap-installation.jpg" alt="SAP Installation" class="service-image">
+  <p>We provide end-to-end SAP installation services across platforms like Linux, Windows, and cloud environments...</p>
+</section>
+
+  <section class="container my-5">
+    <h2>SAP Installation Services</h2>
+    <p>We provide end-to-end SAP installation services across platforms like Linux, Windows, and cloud environments. Our certified experts ensure seamless deployment, optimized for performance and reliability.</p>
+    <h4>Key Offerings</h4>
+    <ul>
+      <li>SAP S/4HANA, ECC, NetWeaver setup</li>
+      <li>Database installation: HANA, Oracle, MSSQL</li>
+      <li>Operating system tuning and compatibility</li>
+      <li>SAP Solution Manager implementation</li>
+    </ul>
+    <p>We follow SAP best practices and ensure audit-ready installations.</p>
+  </section>
+<!-- Footer -->
+  <footer>
+    &copy; 2025 Versuance. All rights reserved.
+  </footer>
+
+ <!-- <script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
+  }
+</script>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    if (nav.style.display === 'flex') {
+      nav.style.display = 'none';
+    } else {
+      nav.style.display = 'flex';
+    }
+  }
+</script> -->
+ <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
