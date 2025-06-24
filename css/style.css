@@ -20,7 +20,8 @@ main {
     flex: 1;
 }
 img, iframe, video {
-  max-width: 100%;
+  /* max-width: 100%; max-width: 30%; */
+  max-width: 30%;
   height: auto;
   /* display: block; */
   
@@ -40,6 +41,7 @@ img, iframe, video {
   color: white;
   font-size: 24px;
   font-weight: bold;
+ 
 }
 
 .navbar-center {
@@ -135,6 +137,7 @@ img, iframe, video {
 .sap-info-left {
     width: 30%;
     padding-right: 30px;
+    
 }
 
 .sap-logo {
@@ -145,7 +148,7 @@ img, iframe, video {
 .sap-info-left p {
     font-size: 14px;
     line-height: 1.6;
-    color: #333;
+    color: #002b45;
 }
 
 .sap-partner-logo {
@@ -1074,31 +1077,7 @@ details p, ul {
   margin-left: 20px;
 }
 
-/* .contact-info {
-  margin-top: 20px;
-  padding: 15px;
-  background: #e6f2ff;
-  border-left: 4px solid #004080;
-}
 
-.contact-info h3 {
-  margin-bottom: 10px;
-}
-
-    .container {
-      max-width: 600px;
-      margin: 50px auto;
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    } */
-
-    /* h2 {
-      text-align: center;
-      color: #003366;
-      margin-bottom: 25px;
-    } */
 
     label {
       display: block;
@@ -1139,4 +1118,4 @@ details p, ul {
       color: #007733;
       margin-top: 20px;
       font-weight: bold;
-    } */
+    } 
