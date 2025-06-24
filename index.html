@@ -32,6 +32,7 @@
         <li><a href="sap-installation.html">Installation</a></li>
         <li><a href="sap-upgrade.html">Upgrade</a></li>
         <li><a href="sap-migration.html">Migration</a></li>
+        <li><a href="sap-service.html">Services</a></li>
         <li><a href="company.html">Company</a></li>
       </ul>
     </nav>
@@ -154,33 +155,32 @@
       </div>
     </div>
   </main>
+  
+<!-- Chat Icon -->
+<div id="chat-icon" onclick="toggleChat()">💬</div>
+
+<!-- Chat Window -->
+<div id="chat-box">
+  <div id="chat-header">Versuance Chatbot <span onclick="toggleChat()">✖</span></div>
+  <div id="chat-body">
+    <div id="messages">
+      <p><strong>Bot:</strong> Hello! How can we help you today?</p>
+    </div>
+    <input type="text" id="chat-input" placeholder="Type your message..." />
+  </div>
+</div>
 
   <!-- Footer -->
   <footer>
     &copy; 2025 Versuance. All rights reserved.
   </footer>
-<!-- <script>
-  function toggleMenu() {
-    const nav = document.getElementById('navLinks');
-    nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
-  }
-</script>
-<script>
-  function toggleMenu() {
-    const nav = document.getElementById('navLinks');
-    if (nav.style.display === 'flex') {
-      nav.style.display = 'none';
-    } else {
-      nav.style.display = 'flex';
-    }
-  }
-</script> -->
+
  <script>
     function toggleMenu() {
       const nav = document.getElementById('navLinks');
       nav.classList.toggle('active');
     }
   </script>
-
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | Team You Solutions</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f6fc;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 18px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    button {
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #002f66;
+    }
+
+    .thank-you {
+      display: none;
+      background-color: #e6f5ea;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      color: #007733;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Register with Team You Solutions</h2>
+  <form id="registerForm">
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone Number *</label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <label for="company">Company Name</label>
+    <input type="text" id="company" name="company" />
+
+    <label for="service">Service Interested In</label>
+    <select id="service" name="service">
+      <option value="">Select a service</option>
+      <option>Bank Reconciliation</option>
+      <option>Accounts Payable Reconciliation</option>
+      <option>GST / Tax Reconciliation</option>
+      <option>Invoice/Payment Reconciliation</option>
+      <option>Excel Data Analysis</option>
+      <option>MIS Reporting Automation</option>
+    </select>
+
+    <label for="message">Additional Message</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="thank-you" id="thankYouMessage">
+    ✅ Thank you for registering! We will contact you shortly.
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('registerForm');
+  const thankYou = document.getElementById('thankYouMessage');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent actual form submission
+
+    // Show thank-you message
+    thankYou.style.display = 'block';
+
+    // Optionally, reset form
+    form.reset();
+
+    // TODO: Add email/WhatsApp integration here if needed
+  });
+</script>
+
+</body>
+</html>

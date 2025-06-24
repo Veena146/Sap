@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | Versuance</title>
+  <meta name="description" content="Read insights, tips, and updates from Versuance on IT services, SAP, staffing, and technology trends.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar" >
+  <div class="navbar-left">
+    <span class="logo">Versuance</span>
+  </div>
+   <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  <div class="navbar-center" id="navLinks">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="career.html">Careers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+
+      </ul>
+    </nav>
+  </div>
+  <div class="navbar-right">
+     <a href="contact.html" class="contact-btn">Contact Us</a>
+  </div>
+  <!-- <button class="menu-toggle" onclick="toggleMenu()">☰</button> -->
+</header>
+  <header>
+    <h1>Versuance Blog</h1>
+    <p>Insights & updates on IT services, SAP solutions, digital staffing, and more.</p>
+  </header>
+
+  <section class="blog-container">
+
+    <article class="blog-post">
+      <h2>Top 5 IT Consulting Trends in 2025</h2>
+      <p class="date">June 15, 2025</p>
+      <p>Discover how AI, cloud integration, cybersecurity, and digital transformation are shaping IT consulting this year. Stay ahead with Versuance’s expertise.</p>
+     
+    </article>
+
+    <article class="blog-post">
+      <h2>Why SAP is Crucial for Growing Businesses</h2>
+      <p class="date">May 30, 2025</p>
+      <p>SAP helps streamline operations and ensure scalable growth. Learn how our SAP services empower businesses to succeed in a competitive market.</p>
+      
+    </article>
+
+    <article class="blog-post">
+      <h2>Internships That Build Careers: SAP Training at Versuance</h2>
+      <p class="date">May 10, 2025</p>
+      <p>We’re training the next generation of SAP professionals. Read how our internship and training programs provide real-world experience.</p>
+      
+    </article>
+
+  </section>
+ <footer>
+  &copy; 2025 Versuance. All rights reserved.
+</footer>
+ <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
